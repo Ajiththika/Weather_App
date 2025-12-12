@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <h2>Weather App</h2>
+
+    <div class="form-group">
+      <label>ZIP code</label>
+      <input type="text" id="zipInput" placeholder="40000">
+    </div>
+
+    <div class="form-group">
+      <label>Country</label>
+      <input type="text" id="countryInput" placeholder="LK">
+    </div>
+
+    <button onclick="getWeather()">Check Weather</button>
+
+    <div class="loading" id="loadingBox">Loading...</div>
+
+    <div class="result" id="resultBox"></div>
+  </div>
+
+  <script src="./script.js"></script>
+
+</body>
+</html>
